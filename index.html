@@ -42,11 +42,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/blog/" class="profilepic">
-			<img src="" class="js-avatar">
+		<a href="/" class="profilepic">
+			<img src="/img/3.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/blog/">Lucy Jiang</a></h1>
+		  <h1 class="header-author"><a href="/">Lucy Jiang</a></h1>
 		</hgroup>
 		
 
@@ -55,7 +55,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -99,7 +99,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/img/3.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Lucy Jiang</h1>
@@ -131,7 +131,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -174,54 +174,10 @@
 <li>npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> #安装淘宝的cnpm 管理器  </li>
 <li>cnpm -v    #查看cnpm版本  </li>
 <li>cnpm install -g hexo-cli #安装hexo框架  </li>
-<li>hexo -v    #查看hexo版本  <h3 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h3></li>
-<li>mkdir blog    #创建blog目录  </li>
-<li>cd blog    #进入blog目录  </li>
-<li>sudo hexo init #生成博客 初始化博客  <blockquote>
-<p>sudo表示用管理员身份执行，Windows不可用  </p>
-</blockquote>
-<h3 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h3></li>
-<li>hexo s    #启动本地博客服务  </li>
-<li><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> #本地访问地址<h3 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h3></li>
-<li>hexo n “我的第一篇文章” #创建新的文章  <blockquote>
-<p>用markdown格式书写新生成的博客的内容（vs code编辑）  </p>
-</blockquote>
-</li>
-<li>hexo clean #清理数据库  </li>
-<li>hexo g #生成博客  <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3></li>
-<li>去Github创建一个新的仓库  <blockquote>
-<p>项目名称: YourGithubName.github.io  </p>
-</blockquote>
-</li>
-<li>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件  <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3></li>
-<li>编辑_config.yml文件  <blockquote>
-<p>在文件底部添加：  </p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git  </span><br><span class="line">repo: https:&#x2F;&#x2F;github.com&#x2F;YourGithubName&#x2F;YourGithubName.github.io.git  </span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></li>
-<li>hexo d    #部署到Github仓库里  <blockquote>
-<p><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #访问这个地址可以查看博客  </p>
-</blockquote>
-<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><h4 id="1-主题选择"><a href="#1-主题选择" class="headerlink" title="1. 主题选择"></a>1. 主题选择</h4><blockquote>
-<p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a><br>yilia<br>pacman    </p>
-</blockquote>
-<h4 id="2-更改"><a href="#2-更改" class="headerlink" title="2. 更改"></a>2. 更改</h4></li>
-<li>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia #下载yilia  主题到本地   <blockquote>
-<p>克隆到themes/yilia目录   </p>
-</blockquote>
-</li>
-<li>#修改hexo根目录下的 _config.yml 文件，修改theme属性 ： theme: yilia  </li>
-<li>hexo clean    #清理一下  </li>
-<li>hexo g    #生成  </li>
-<li>hexo d    #部署到远程Github仓库  <blockquote>
-<p><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #查看博客  </p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h2 id="第二章-心得"><a href="#第二章-心得" class="headerlink" title="第二章 心得"></a>第二章 心得</h2><p>&emsp;&emsp;希望能够记录自己学到的一些知识，也记录一下生活的点滴。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a><br><a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Yb411a7ty</a><br><a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">https://www.runoob.com/markdown/md-tutorial.html</a>  </p>
-
+<li>hexo -v    #查看hexo版本
+        
+          <a class="article-more-a" href="/2020/06/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/#more">more >></a>
+        
       
 
       
@@ -234,7 +190,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">博客 搭建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
         		</li>
       		
 		</ul>
@@ -367,7 +323,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">博客 搭建</a>
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
             
             <div class="clearfix"></div>
@@ -422,7 +378,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">认真生活</div>
   	  	
     	</section>
     
